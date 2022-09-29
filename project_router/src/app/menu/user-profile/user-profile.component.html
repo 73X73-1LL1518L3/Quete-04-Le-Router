@@ -1,0 +1,16 @@
+<section>
+    <p>
+        <img [src]="user1.photo" alt="image user">
+    </p>
+
+    <div class="data-user">
+        <p>Nom de famille:     <span>{{user1.lastName}}</span></p>
+        <p>Prénom:             <span>{{user1.firstName}}</span></p>
+        <p *ngIf="user1.isLoaded">Age:                <span>{{user1.age}}</span></p>
+        <p>Balance ta meilleure punchline : "{{user1.quote}}"</p> 
+    </div>
+
+    <input type="text" [(ngModel)]="user1.quote">
+
+    <button (click)="user1.showHideAge()">Affiher/Masquer l'âge</button>
+</section>

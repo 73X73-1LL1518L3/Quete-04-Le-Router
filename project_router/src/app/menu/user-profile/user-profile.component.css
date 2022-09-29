@@ -1,0 +1,24 @@
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+
+    border: 5xp solid gray;
+}
+section image{
+    display: block;
+}
+.data-user{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+span{
+    margin: 20px;
+}
+
+input, button{
+    width: 50%;
+}
+
